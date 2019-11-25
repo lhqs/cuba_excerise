@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns="http://schemas.haulmont.com/cuba/rest-services-v2.xsd">
+
+    <service name="cubashare_RestTestService" >
+        <method name="restTest" anonymousAllowed="true">
+            <param name="request"></param>
+        </method>
+    </service>
+</services>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.cubashare.web" xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <layout>
+        <chart:pieChart id="pieChart" titleField="key"
+                        valueField="value" width="622px" height="328px"/>
+    </layout>
+</window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.cubashare.web"
+        xmlns:chart="http://schemas.haulmont.com/charts/charts.xsd">
+    <data>
+        <collection id="ordersDc"
+                    class="com.company.cubashare.entity.Order"
+                    view="_local"/>
+    </data>
+    <timers>
+        <timer id="updateChartTimer" delay="2000" onTimer="updateChart" repeating="true" autostart="true"/>
+    </timers>
+    <layout>
+        <chart:serialChart id="orderHistoryChart"
+                           categoryField="date"
+                           dataContainer="ordersDc"
+                           width="100%">
+            <chart:graphs>
+                <chart:graph valueField="amount"/>
+            </chart:graphs>
+        </chart:serialChart>
+    </layout>
+</window>
